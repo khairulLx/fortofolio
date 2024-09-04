@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('pexels-matteo-di-iorio-3168759-5548694.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #33333300;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2f71ff;
+}
+
+main {
+    padding: 100px 15px;
+}
+
+.intro {
+    padding-left: 5%;
+}
+
+.intro h1 {
+    font-size: 3rem;
+}
+
+.intro h2 {
+    color: #007bff;
+    font-size: 2rem;
+}
+
+p {
+    margin-top: 10px;
+    padding-bottom: 0,5px;
+}
+
+
