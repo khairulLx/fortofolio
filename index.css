@@ -1,80 +1,131 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('pexels-harrison-candlin-1279336-2441454.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    overflow: hidden;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  overflow: hidden; /* Scrolling */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px;
-    background-color: #8ae2f863;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #8ae2f83d
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #2f71ff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2f71ff;
 }
 
 main {
-    padding: 100px 15px;
+  padding: 100px 15px;
 }
 
 .content {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 5%;
-    gap: 50px;
-    padding-bottom: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5%;
+  gap: 50px;
+  padding-bottom: 10%;
 }
 
 .intro h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .intro h2 {
-    color: #007bff;
-    font-size: 2rem;
+  color: #007bff;
+  font-size: 2rem;
 }
 
 p {
-    margin-top: 10px;
-    padding-bottom: 0.5px;
+  margin-top: 10px;
+  padding-bottom: 0.5px;
 }
 
 .gura {
-    width: 35%;
-    max-width: 100%; 
-    height: auto; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 35%;
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .gura2 {
-    padding: 100px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 60%;
-    margin-bottom: 70%;
+  padding: 100px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 60%;
+  margin-bottom: 70%;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+background-color: #131417;  
+}
+p {
+text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+}
+
+.animation {
+  height: 3.5rem; 
+  overflow: hidden;
+  margin-top: -20px;
+  font-size: 3.0rem; 
+  line-height: 3.5rem;
+  display: inline-block;
+}
+
+.animation > div > div { 
+  padding: 0.25rem 0.75rem; 
+  display: block;
+  animation: text-animation 8s infinite; 
+}
+
+.animation > div > div:nth-child(1) {
+background-color:#20a7d8;
+}
+
+.animation > div > div:nth-child(2) {
+background-color:#1b4c85;
+}
+
+.animation > div > div:nth-child(3) {
+background-color:#b9a9ac;
+}
+
+@keyframes text-animation {
+0% { transform: translateY(0); }
+16% { transform: translateY(0); }
+20% { transform: translateY(-100%); } 
+36% { transform: translateY(-100%); } 
+40% { transform: translateY(-200%); } 
+56% { transform: translateY(-200%); } 
+60% { transform: translateY(-100%); } 
+76% { transform: translateY(-100%); }  
+80% { transform: translateY(0); } 
+100% { transform: translateY(0); } 
+}
+
